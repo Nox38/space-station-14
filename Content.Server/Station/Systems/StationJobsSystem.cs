@@ -114,19 +114,6 @@ public sealed partial class StationJobsSystem : EntitySystem
         return true;
     }
 
-    /// <inheritdoc cref="TryAdjustJobSlot(Robust.Shared.GameObjects.EntityUid,string,int,bool,bool,Content.Server.Station.Components.StationJobsComponent?)"/>
-    /// <param name="station">Station to adjust the job slot on.</param>
-    /// <param name="job">Job to adjust.</param>
-    /// <param name="amount">Amount to adjust by.</param>
-    /// <param name="createSlot">Whether or not it should create the slot if it doesn't exist.</param>
-    /// <param name="clamp">Whether or not to clamp to zero if you'd remove more jobs than are available.</param>
-    /// <param name="stationJobs">Resolve pattern, station jobs component of the station.</param>
-    public bool TryAdjustJobSlot(EntityUid station, JobPrototype job, int amount, bool createSlot = false, bool clamp = false,
-        StationJobsComponent? stationJobs = null)
-    {
-        return TryAdjustJobSlot(station, job.ID, amount, createSlot, clamp, stationJobs);
-    }
-
     /// <summary>
     /// Attempts to adjust the given job slot by the amount provided.
     /// </summary>
@@ -139,7 +126,7 @@ public sealed partial class StationJobsSystem : EntitySystem
     /// <returns>Whether or not slot adjustment was a success.</returns>
     /// <exception cref="ArgumentException">Thrown when the given station is not a station.</exception>
     public bool TryAdjustJobSlot(EntityUid station,
-        string jobPrototypeId,
+        ProtoId<JobPrototype> jobPrototypeId,
         int amount,
         bool createSlot = false,
         bool clamp = false,

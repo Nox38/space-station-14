@@ -80,6 +80,17 @@ public sealed partial class StationJobsComponent : Component
     [DataField("availableJobs", required: true)]
     public Dictionary<ProtoId<JobPrototype>, int[]> SetupAvailableJobs = default!;
 
+    // TODO dict of pool name to pool def
+    [DataField("availableJobsPool")]
+    public Dictionary<string, JobGroup> SetupAvailableJobGroups = default!;
+}
+
+[DataDefinition]
+public partial class JobGroup
+{
     [DataField]
-    public int Numbers = 13;
+    public int[] Numbers = [];
+
+    [DataField]
+    public List<ProtoId<JobPrototype>> Jobs = [];
 }
