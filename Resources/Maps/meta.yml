@@ -7347,7 +7347,8 @@ entities:
             1: 255
             0: 61440
           18,1:
-            0: 65535
+            0: 65503
+            11: 32
           18,2:
             0: 15
             5: 65280
@@ -7359,10 +7360,11 @@ entities:
             5: 3840
           19,0:
             1: 255
-            0: 4096
+            6: 4096
             5: 3072
           19,1:
-            0: 4369
+            12: 1
+            0: 4368
           19,2:
             0: 1
             5: 4352
@@ -7554,7 +7556,7 @@ entities:
             1: 61440
           16,-4:
             1: 8738
-            11: 2184
+            13: 2184
           16,-3:
             1: 8738
             5: 2184
@@ -7565,7 +7567,7 @@ entities:
             1: 8738
             5: 2184
           17,-4:
-            11: 819
+            13: 819
             5: 2176
             1: 32768
           17,-3:
@@ -8827,6 +8829,36 @@ entities:
           moles:
           - 21.6852
           - 81.57766
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+          - 21.824879
+          - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.556696
+          - 81.09423
           - 0
           - 0
           - 0
@@ -12373,7 +12405,7 @@ entities:
       pos: 11.5,29.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -3512.0142
+      secondsUntilStateChange: -3735.3516
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14668,7 +14700,7 @@ entities:
       pos: -29.5,15.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -257441.31
+      secondsUntilStateChange: -257664.66
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14932,7 +14964,7 @@ entities:
       pos: -4.5,53.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -112095.05
+      secondsUntilStateChange: -112318.38
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 2
@@ -49788,6 +49820,31 @@ entities:
     - type: Transform
       pos: -6.5,26.5
       parent: 5350
+  - uid: 28709
+    components:
+    - type: Transform
+      pos: 70.5,3.5
+      parent: 5350
+  - uid: 28710
+    components:
+    - type: Transform
+      pos: 71.5,3.5
+      parent: 5350
+  - uid: 28711
+    components:
+    - type: Transform
+      pos: 72.5,3.5
+      parent: 5350
+  - uid: 28712
+    components:
+    - type: Transform
+      pos: 73.5,3.5
+      parent: 5350
+  - uid: 28713
+    components:
+    - type: Transform
+      pos: 74.5,3.5
+      parent: 5350
 - proto: CableHVStack
   entities:
   - uid: 1551
@@ -70688,10 +70745,30 @@ entities:
     - type: Transform
       pos: 76.5,3.5
       parent: 5350
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateEngineeringAMEShielding
   entities:
   - uid: 17029
     components:
+    - type: MetaData
+      desc: 20 parts for the main body of an antimatter reactor, or for expanding an existing one.
     - type: Transform
       pos: 76.5,4.5
       parent: 5350
@@ -70701,8 +70778,8 @@ entities:
         immutable: False
         temperature: 293.1462
         moles:
-        - 1.606311
-        - 6.042789
+        - 1.8744951
+        - 7.051672
         - 0
         - 0
         - 0
@@ -70719,17 +70796,17 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 14093
-          - 15326
-          - 23358
-          - 23359
-          - 16554
-          - 23357
-          - 23507
-          - 23508
-          - 23504
-          - 23505
           - 23506
+          - 23505
+          - 23504
+          - 23507
+          - 23357
+          - 16554
+          - 23359
+          - 23358
+          - 15326
+          - 23508
+          - 14093
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -84524,7 +84601,7 @@ entities:
       pos: 31.5,-33.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -34934.09
+      secondsUntilStateChange: -35157.426
       state: Closing
   - uid: 9615
     components:
@@ -185219,7 +185296,7 @@ entities:
       pos: -28.5,-5.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -40646
+      secondsUntilStateChange: -40869.336
       state: Opening
   - uid: 17570
     components:
