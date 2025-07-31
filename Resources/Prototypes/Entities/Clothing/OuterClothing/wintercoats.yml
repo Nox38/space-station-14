@@ -667,6 +667,28 @@
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
 - type: entity
+  parent: [ClothingOuterWinterCoatToggleable, ClothingOuterArmorBase]
+  id: ClothingOuterWinterSecArmored
+  name: security armored winter coat
+  description: A Double-Breasted longcoat, worn over a light armor vest. While not as protective as a standard armor vest, its warm and has pockets!
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.65
+        Piercing: 0.8
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 1
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coatsecarmored.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/WinterCoats/coatsecarmored.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterSec
+
+- type: entity
   parent: [ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
   id: ClothingOuterWinterSec
   name: security winter coat
