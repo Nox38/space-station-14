@@ -19,6 +19,24 @@
     - BoxCardboard
 
 - type: entity
+  parent: BoxCardboard
+  id: BoxSurvivalEmpty
+  name: survival box
+  description: A cardboard box for storing emergency supplies.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,2
+    whitelist:
+      tags:
+      - SurvivalBoxInsertable
+
+- type: entity
   name: mousetrap box
   parent: BoxCardboard
   id: BoxMousetrap
@@ -192,14 +210,23 @@
       - state: writing
 
 - type: entity
-  parent: BoxHug
+  parent: BoxCardboard
   id: BoxHugHealing
   suffix: Medical
   components:
+  - type: Sprite
+    layers:
+    - state: box_hug
+    - state: heart
+    - type: Item
+      heldPrefix: hug
   - type: StorageFill
     contents:
       - id: Brutepack
         amount: 3
+  - type: Tag
+    tags:
+    - BoxHug
 
 - type: entity
   name: inflatable wall box

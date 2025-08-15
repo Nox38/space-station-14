@@ -438,6 +438,7 @@
   - type: Tag
     tags:
       - FoodSnack
+      - SurvivalBoxInsertable
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
     state: nutribrick
@@ -463,6 +464,7 @@
   - type: Tag
     tags:
       - ReptilianFood
+      - SurvivalBoxInsertable
   - type: Sprite
     state: nutribrick-open
   - type: Food
@@ -858,6 +860,7 @@
     tags:
     - ClothMade
     - Trash
+    - SurvivalBoxInsertable
   - type: Sprite
     state: mre-wrapper
   - type: Item

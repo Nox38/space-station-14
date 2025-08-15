@@ -188,6 +188,9 @@
           Quantity: 12
         - ReagentId: TranexamicAcid
           Quantity: 3
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
 
 - type: entity
   name: poison auto-injector

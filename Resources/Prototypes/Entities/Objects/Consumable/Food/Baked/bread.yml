@@ -700,6 +700,9 @@
     damage:
       types:
         Blunt: 1 # bonk
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
 # Tastes like France.
 
 - type: entity

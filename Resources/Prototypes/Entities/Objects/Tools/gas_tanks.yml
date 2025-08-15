@@ -114,6 +114,9 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
 
 - type: entity
   parent: EmergencyOxygenTank
