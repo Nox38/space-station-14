@@ -4,14 +4,24 @@
     ClothingBackpackSecurity: 3
     ClothingBackpackSatchelSecurity: 3
     ClothingBackpackDuffelSecurity: 3
-    ClothingUniformJumpsuitSec: 3
+    ClothingBeltSecurity: 3
+    ClothingBeltSecurityWebbing: 3
     ClothingShoesBootsJack: 3
+    ClothingShoesBootsWinterSec: 3
+    ClothingHeadHelmetBasic: 3
+    ClothingHeadHelmetJustice: 1
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3
     ClothingHeadBandRed: 3
+    ClothingMaskGasSecurity: 3
     ClothingMaskNeckGaiterRed: 3
+    ClothingNeckScarfStripedRed: 3
+    ClothingEyesGlassesSecurity: 3
+    ClothingEyesHudSecurity: 2
+    ClothingEyesEyepatchHudSecurity: 2
     ClothingHandsGlovesColorBlack: 3
     ClothingHandsGlovesFingerless: 3
+    ClothingUniformJumpsuitSec: 3
     ClothingUniformJumpskirtSec: 3
     ClothingUniformJumpsuitSecGrey: 3
     ClothingUniformJumpskirtSecGrey: 3
@@ -19,12 +29,7 @@
     ClothingHeadsetSecurity: 3
     ClothingOuterWinterSec: 2
     ClothingOuterArmorBasic: 2
-    ClothingNeckScarfStripedRed: 3
     ClothingOuterArmorBasicSlim: 2
-    ClothingEyesBlindfold: 1
-    ClothingShoesBootsCombat: 1
-    ClothingShoesBootsWinterSec: 2
-    ClothingHeadHelmetJustice: 1
   contrabandInventory:
     ClothingMaskClownSecurity: 1
     ClothingMaskMimeSecurity: 1

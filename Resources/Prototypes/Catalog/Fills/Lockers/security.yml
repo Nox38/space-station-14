@@ -33,8 +33,6 @@
     - id: ClothingEyesGlassesSecurity
     - id: ClothingHandsGlovesCombat
     - id: ClothingShoesBootsJack
-    - id: ClothingOuterCoatWarden
-    - id: ClothingOuterWinterWarden
     - id: RubberStampWarden
     - id: DoorRemoteArmory
     - id: HoloprojectorSecurity
@@ -154,6 +152,7 @@
     - id: ClothingOuterCoatDetectiveLoadout
     - id: FlippoEngravedLighter
     - id: FlashlightSeclite
+    - id: WeaponDisabler
     - id: ForensicScanner
     - id: LogProbeCartridge
     - id: BoxForensicPad
