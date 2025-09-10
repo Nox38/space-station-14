@@ -7,9 +7,9 @@
   components:
   - type: Sprite
   - type: Item
-    size: Huge
+    size: Large
     shape:
-    - 0,0,3,2
+    - 0,0,4,1
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     quickEquip: false
@@ -108,6 +108,9 @@
   id: WeaponRifleM90GrenadeLauncher
   description: An older bullpup carbine model, with an attached underbarrel grenade launcher. Uses .20 rifle ammo.
   components:
+  - type: Item
+    shape:
+    - 0,0,3,2 # Shorter because it's a bullpup, taller because it has a grenade launcher.
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
     layers:
@@ -208,7 +211,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     shape:
-    - 0,0,4,2
+    - 0,0,5,1
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
   - type: Gun
