@@ -44,6 +44,13 @@
   id: WeaponSniperMosin
   description: A true relic, the Kardashev-Mosin has served in nearly every armed conflict since its creation 670 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Loads 10 rounds of .30 rifle.
   components:
+  - type: Item
+    shape:
+    - 0,0,4,0
+    storedRotation: -90
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood_storage_64x.rsi # Todo: Add high-quality sprite.
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
     layers:
@@ -99,6 +106,10 @@
     size: Huge
     shape:
     - 0,0,5,1
+    storedRotation: 90
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Guns/Snipers/heavy_sniper_storage_64x.rsi
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: Clothing
