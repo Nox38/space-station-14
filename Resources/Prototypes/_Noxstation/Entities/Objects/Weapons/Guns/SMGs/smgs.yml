@@ -1,0 +1,14 @@
+- type: entity
+  parent: WeaponSubMachineGunDrozd
+  id: DrozdBetter
+  name: Drozd but better inhands
+  components:
+    - type: Sprite
+      sprite: _Noxstation/Objects/Weapons/Guns/SMGs/drozdBetter.rsi
+      layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: mag-0
+        map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
