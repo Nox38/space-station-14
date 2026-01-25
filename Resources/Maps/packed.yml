@@ -10273,8 +10273,6 @@ entities:
       pos: 35.5,-30.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22
   - uid: 400
